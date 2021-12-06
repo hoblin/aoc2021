@@ -1,7 +1,3 @@
-require "rubygems"
-require "bundler/setup"
-require "awesome_print"
-
 counter = []
 readings = File.read("03/input.txt").split
 readings.each do |line|
@@ -14,4 +10,4 @@ counter.map do |i|
   gamma << (i.positive? ? "1" : "0")
   epsilon << (i.positive? ? "0" : "1")
 end
-ap gamma.to_i(2) * epsilon.to_i(2)
+pp gamma.to_i(2) * epsilon.to_i(2)

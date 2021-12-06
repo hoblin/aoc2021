@@ -1,6 +1,3 @@
-require "rubygems"
-require "bundler/setup"
-require "awesome_print"
 # in terms of man/hours it's easier to base solution on the first puzzle.
 # But in terms ot computer/hours it's better to start checking
 # from all winning numbers and delete one by one

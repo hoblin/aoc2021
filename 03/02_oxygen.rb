@@ -1,7 +1,3 @@
-require "rubygems"
-require "bundler/setup"
-require "awesome_print"
-
 # Dirty and ugly but works
 def common_bit_at(pos, lines)
   one = lines.filter { |line| line[pos] == "1" }
@@ -36,4 +32,4 @@ readings.first.length.times do |i|
   end
 end
 
-ap generator.to_i(2) * scrubber.to_i(2)
+pp generator.to_i(2) * scrubber.to_i(2)

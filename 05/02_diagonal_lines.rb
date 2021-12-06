@@ -1,5 +1,3 @@
-require "rubygems"
-require "bundler/setup"
 require "bresenham"
 require "ruby-progressbar"
 

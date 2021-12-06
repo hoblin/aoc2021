@@ -1,7 +1,3 @@
-require "rubygems"
-require "bundler/setup"
-require "ruby-progressbar"
-
 LIFETIME = 256
 
 Tribe = Struct.new(:school) do

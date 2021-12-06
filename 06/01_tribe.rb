@@ -1,5 +1,3 @@
-require "rubygems"
-require "bundler/setup"
 require "ruby-progressbar"
 
 Fish = Struct.new(:spawn_delay) do

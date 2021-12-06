@@ -1,7 +1,3 @@
-require "rubygems"
-require "bundler/setup"
-require "awesome_print"
-
 Card = Struct.new(:card, :rows, :numbers) do
   def initialize(string)
     self.card = string.chomp
