@@ -1,6 +1,6 @@
-require 'rubygems'
-require 'bundler/setup'
-require 'ruby-progressbar'
+require "rubygems"
+require "bundler/setup"
+require "ruby-progressbar"
 
 LIFETIME = 256
 
@@ -24,7 +24,7 @@ Tribe = Struct.new(:school) do
   end
 end
 
-tribe = Tribe.new File.read('06/input.txt').chomp.split(',').map(&:to_i)
+tribe = Tribe.new File.read("06/input.txt").chomp.split(",").map(&:to_i)
 
 LIFETIME.times { tribe.tick }
-p 'Result:', tribe.school.sum
+p "Result:", tribe.school.sum

@@ -1,6 +1,6 @@
-require 'rubygems'
-require 'bundler/setup'
-require 'ruby-progressbar'
+require "rubygems"
+require "bundler/setup"
+require "ruby-progressbar"
 
 Fish = Struct.new(:spawn_delay) do
   def tick
@@ -12,11 +12,11 @@ Fish = Struct.new(:spawn_delay) do
   end
 end
 
-$tribe = File.read('06/input.txt').chomp.split(',').map(&:to_i).map { |delay| Fish.new(delay) }
+$tribe = File.read("06/input.txt").chomp.split(",").map(&:to_i).map { |delay| Fish.new(delay) }
 
 progressbar = ProgressBar.create(total: 80)
 80.times do
   $tribe.map(&:tick)
   progressbar.increment
 end
-p 'Result:', $tribe.size
+p "Result:", $tribe.size
