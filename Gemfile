@@ -8,3 +8,6 @@ gem 'awesome_print'
 gem 'guard'
 gem 'guard-exec', '~> 0.1.2'
 gem 'guard-rubocop'
+# Day 05
+gem 'bresenham'
+gem 'ruby-progressbar'
