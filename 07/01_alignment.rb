@@ -11,7 +11,7 @@ crabs_by_position = crabs.each_with_object({}) { |i, memo| memo[i] = 1 + (memo[i
 min_position = crabs_by_position.keys.min
 max_position = crabs_by_position.keys.max
 
-progressbar = ProgressBar.create(total: max_position - min_position)
+progressbar = ProgressBar.create(total: max_position - min_position + 1)
 
 best_position = (min_position..max_position).min_by do |pos|
   progressbar.increment
